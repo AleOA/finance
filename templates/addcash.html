@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/addcash" method="post">
+        <div class="form-group">
+            <select class="form-control" name="cash">
+                <option disabled selected value="">CASH</option>
+
+                <option value="10000">$10000</option>
+                <option value="50000">$50000</option>
+                <option value="100000">$100000</option>
+                <option value="500000">$500000</option>
+                <option value="1000000">$1000000</option>
+
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">ADD CASH</button>
+    </form>
+{% endblock %}
